@@ -22,7 +22,7 @@ const items = ['Apple', 'Banana', 'Orange'];
 
 app.get('/items', (req, res) => {
     res.json(items);
-})
+});
 
 //Serve static files from the "public" holder
 app.use(express.static('public'));
