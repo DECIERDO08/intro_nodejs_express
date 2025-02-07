@@ -28,7 +28,7 @@
                 input.value = '';
                 loadItems(); 
             }
-        })
+        });
 
         async function loadItems() {
             const response = await fetch('/Items');
@@ -36,7 +36,7 @@
             list.innerHTML = items.map(item => `<li>${item}</li>`).join('');
         }
 
-        loadItems() // Call function on page load
+        loadItems(); // Call function on page load
     </script>
 
 </body>
